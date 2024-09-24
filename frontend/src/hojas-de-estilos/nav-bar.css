@@ -1,0 +1,82 @@
+
+
+.nav-bar {
+    width: 100%;
+    background-color: #16161d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Position relative to position the logo absolutely */
+}
+
+
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.nav-bar li {
+    margin: 0 10px;
+}
+.contenedor-botones{
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 20px;
+    
+}
+.nav-bar button {
+    background-color: #242430;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0px 0px 0px 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+    letter-spacing: 1px; /* Letter spacing */
+}
+
+.nav-bar button:hover {
+    background-color: #2980b9;
+}
+
+.Logo-Dilinger{
+    max-width: 90px;
+    max-height: 90px; /* Adjust the height as needed */
+    position: absolute;
+     /* Adjust to position the logo hanging from the navbar */
+    left: 20px; /* Adjust to position the logo from the left edge */
+    
+}
+.logo-nombre{
+    position: absolute;
+    left: 110px;
+    font-size: 3rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.letrasFondo{
+    font-size: 100px; /* Tamaño grande del texto */
+    color: rgba(0, 0, 0, 0.1); /* Color negro con 10% de opacidad para la transparencia */
+    position: fixed; /* Posiciona el texto de manera fija en la página */
+    bottom: 10px; /* Ajusta la posición vertical */
+    right: 10px; /* Ajusta la posición horizontal */
+    z-index: -1; /* Envía el texto al fondo */
+    transform: rotate(-45deg); /* Rotar el texto si quieres un efecto más interesante */
+    pointer-events: none; /* Permitir clics a través del texto */
+}
